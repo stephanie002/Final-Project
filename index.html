@@ -29,60 +29,37 @@
   <button type="button" onclick='document.getElementById("Myself").innerHTML = "help is being contacted"'>Click Me!!</button> 
 </div>
 
-   
- <div class="w3-container">
-   <div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="openCity('Account')">Account</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('Settings')">Settings</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('About')">About</button>
+  <title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
 
-<div id="Account" class="w3-container city">
-  <h2>Account</h2>
- <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-Contact 2:<br>
-<input type="text" name="contact 2"><br>
-E-mail:<br>
-<input type="text" name="email"><br>
-Emergency message:<br>
-<input type="text" name="emergency message" size="50"><br><br>
-<input type="submit" value="Set contact">
-</form>
+<!-- Page Content -->
+<div style="margin-left:25%">
 
-  <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-Contact 2:<br>
-<input type="text" name="contact 2"><br>
-E-mail:<br>
-<input type="text" name="email"><br>
-Emergency message:<br>
-<input type="text" name="emergency message" size="50"><br><br>
-<input type="submit" value="Set contact">
-</form>
-  
-  
+<div class="w3-container w3-teal">
+  <h1>My Page</h1>
 </div>
 
-<div id="Settings" class="w3-container city" style="display:none">
-  <h2>Settings</h2>
-  <p>Paris is the capital of France.</p> 
+<img src="img_car.jpg" alt="Car" style="width:100%">
+
+<div class="w3-container">
+<h2>Sidebar Navigation Example</h2>
+<p>The sidebar with is set with "style="width:25%".</p>
+<p>The left margin of the page content is set to the same value.</p>
 </div>
 
-<div id="About" class="w3-container city" style="display:none">
-  <h2>About</h2>
-  <p>Tokyo is the capital of Japan.</p>
 </div>
-<script>
-function openCity(cityName) {
-    var i;
-    var x = document.getElementsByClassName("city");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    document.getElementById(cityName).style.display = "block";  
-}
-</script>
-     
-     
+      
+ 
      
    </body>
    </html>
