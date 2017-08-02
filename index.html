@@ -29,27 +29,6 @@
   <button type="button" onclick='document.getElementById("Myself").innerHTML = "help is being contacted"'>Click Me!!</button> 
 </div>
 
-
-<form action="mailto:someone@example.com" method="post" enctype="text/plain">
-Contact 1:<br>
-<input type="text" name="contact 1"><br>
-E-mail:<br>
-<input type="text" name="email"><br>
-Emergency message:<br>
-<input type="text" name="emergency message" size="50"><br><br>
-<input type="submit" value="Set contact">
-</form>
-
-
-<form action="mailto:someone@example.com" method="post" enctype="text/plain">
-Contact 2:<br>
-<input type="text" name="contact 2"><br>
-E-mail:<br>
-<input type="text" name="email"><br>
-Emergency message:<br>
-<input type="text" name="emergency message" size="50"><br><br>
-<input type="submit" value="Set contact">
-</form>
    
  <div class="w3-container">
    <div class="w3-bar w3-black">
@@ -60,12 +39,16 @@ Emergency message:<br>
 
 <div id="Account" class="w3-container city">
   <h2>Account</h2>
-  <p>London is the capital city of England.</p>
-</div>
+ <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+Contact 2:<br>
+<input type="text" name="contact 2"><br>
+E-mail:<br>
+<input type="text" name="email"><br>
+Emergency message:<br>
+<input type="text" name="emergency message" size="50"><br><br>
+<input type="submit" value="Set contact">
+</form>
 
-<div id="Settings" class="w3-container city" style="display:none">
-  <h2>Settings</h2>
-  <p>Paris is the capital of France.</p> 
   <form action="mailto:someone@example.com" method="post" enctype="text/plain">
 Contact 2:<br>
 <input type="text" name="contact 2"><br>
@@ -75,6 +58,13 @@ Emergency message:<br>
 <input type="text" name="emergency message" size="50"><br><br>
 <input type="submit" value="Set contact">
 </form>
+  
+  
+</div>
+
+<div id="Settings" class="w3-container city" style="display:none">
+  <h2>Settings</h2>
+  <p>Paris is the capital of France.</p> 
 </div>
 
 <div id="About" class="w3-container city" style="display:none">
