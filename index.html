@@ -16,11 +16,7 @@ h1 {
 
 </head>
 <body>
-  <p><font size="55">EmClick</font></p>
-<div class="Myself">
-<h1 id="Myself"> In trouble? Click the button!</h1>
-  <button type="button" onclick='document.getElementById("Myself").innerHTML = "help is being contacted"'>Click Me!!</button> 
-</div>
+
 
  <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +29,22 @@ h1 {
   <a href="#" class="w3-bar-item w3-button">Login</a>
   <a href="#" class="w3-bar-item w3-button">About </a>
   <a href="#" class="w3-bar-item w3-button">Create Account </a>
+
+  <div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('Login')">Login</button>
 </div>
+
+<div id="Login" class="w3-container city">
+  <h2>Login</h2>
+ <div class="Myself">
+<h1 id="Myself"> In trouble? Click the button!</h1>
+  <button type="button" onclick='document.getElementById("Myself").innerHTML = "help is being contacted"'>Click Me!!</button> 
+</div>
+</div>
+
+  
+  </div>
+
 
 <!-- Page Content -->
 <div class="w3-teal">
