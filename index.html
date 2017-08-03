@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #project {
+   height: 100px; 
+   width: 100px; 
+   left: 250; 
+   top: 250;
+h1 {
+  font size="55"
+  }
+  
+</style>
+<meta charset="UTF-8">
+
+</head>
+<body>
+
+
+ <title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Login</a>
+  <a href="#" class="w3-bar-item w3-button">About </a>
+  <a href="#" class="w3-bar-item w3-button">Create Account </a>
+
+  <div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('Login')">Login</button>
+</div>
+
+<div id="Login" class="w3-container city">
+  <h2>Login</h2>
+ <div class="Myself">
+<h1 id="Myself"> In trouble? Click the button!</h1>
+  <button type="button" onclick='document.getElementById("Myself").innerHTML = "help is being contacted"'>Click Me!!</button> 
+</div>
+</div>
+
+   <div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('About')">About</button>
+</div>
+  
+  </div>
+  </div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>EmClick</h1>
+  </div>
+</div>
+
+<div class="w3-container">
+
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+  
+ 
+   </body>
+   </html>
