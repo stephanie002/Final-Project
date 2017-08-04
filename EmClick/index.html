@@ -3,7 +3,7 @@
 <head>
 <style>
   body {
-    background-color: #97eddc ;
+    background-color: # ;00ffcc
   }
   #project {
    height: 100px; 
@@ -20,14 +20,15 @@
   
 </style>
 <meta charset="UTF-8">
-<title>EmClick</title>
+<title><font size="55">EmClick</font></title>
 </head>
 <body>
-  <p><font size="55">EmClick</font></p>
+  <p><font size="55"><font color="red"><center>EmClick</center></font></font></p>
 <div class="Myself">
-<h1 id="Myself"> In trouble? Click the button!</h1>
+  <h1 id="Myself"> <font color="red">In trouble? Click the button!</font></h1>
   <button type="button" onclick='document.getElementById("Myself").innerHTML = "help is being contacted"'>Click Me!!</button> 
-</div>
+<button style="height:200px;width:200px"></button>
+  </div>
 
    
  <div class="w3-container">
@@ -52,7 +53,7 @@ Emergency message:<br>
   <form action="mailto:someone@example.com" method="post" enctype="text/plain">
 Contact 2:<br>
 <input type="text" name="contact 2"><br>
-E-mail:<br>
+    <font color="red">E-mail:</font><br>
 <input type="text" name="email"><br>
 Emergency message:<br>
 <input type="text" name="emergency message" size="50"><br><br>
@@ -63,14 +64,15 @@ Emergency message:<br>
 </div>
 
 <div id="Settings" class="w3-container city" style="display:none">
-  <h2>Settings</h2>
+  <h2><font color="red">Settings</font></h2>
   <p>Paris is the capital of France.</p> 
 </div>
 
 <div id="About" class="w3-container city" style="display:none">
-  <h2>About</h2>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
+  <h2><font color="red">About</font></h2>
+  <p>EmClick is an certified website to ensure that you recieve immediate help in the case of an emergency. Emclick is to be used for emergencies only. Innappropriate use of this website will result legal consequences. </p>
+EmClick
+   </div>
 <script>
 function openCity(cityName) {
     var i;
@@ -78,11 +80,6 @@ function openCity(cityName) {
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
     }
-    document.getElementById(cityName).style.display = "block";  
-}
-</script>
-     
-     
      
    </body>
    </html>
