@@ -2,75 +2,88 @@
 <html>
 <head>
 <style>
+  body {
+    background-color: #000000 ;
+  }
   #project {
    height: 100px; 
    width: 100px; 
    left: 250; 
    top: 250;
-h1 {
-  font size="55"
+  }
+ ul {
+ border-style: outset;
+   class="outset";
+   font size="100";
+ 
   }
   
 </style>
 <meta charset="UTF-8">
-
+<title><font size="55">EmClick</font></title>
 </head>
 <body>
-
-
- <title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
-
-<!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
-  <a href="#" class="w3-bar-item w3-button">Login</a>
-  <a href="#" class="w3-bar-item w3-button">About </a>
-  <a href="#" class="w3-bar-item w3-button">Create Account </a>
-
-  <div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="openCity('Login')">Login</button>
-</div>
-
-<div id="Login" class="w3-container city">
-  <h2>Login</h2> 
- <div class="Myself">
-<h1 id="Myself"> In trouble? Click the button!</h1>
+  <p><font size="55"><font color="red"><center>EmClick</center></font></font></p>
+<div class="Myself">
+  <h1 id="Myself"> <font color="red">In trouble? Click the button!</font></h1>
   <button type="button" onclick='document.getElementById("Myself").innerHTML = "help is being contacted"'>Click Me!!</button> 
 </div>
-</div>
 
+   
+ <div class="w3-container">
    <div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('Account')">Account</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Settings')">Settings</button>
   <button class="w3-bar-item w3-button" onclick="openCity('About')">About</button>
 </div>
-  
-  </div>
-  </div>
 
-<!-- Page Content -->
-<div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-  <div class="w3-container">
-    <h1 align="center">EmClick</h1>
-  </div>
+<div id="Account" class="w3-container city">
+  <h2>Account</h2>
+ <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+Contact 2:<br>
+<input type="text" name="contact 2"><br>
+E-mail:<br>
+<input type="text" name="email"><br>
+Emergency message:<br>
+<input type="text" name="emergency message" size="50"><br><br>
+<input type="submit" value="Set contact">
+</form>
+
+  <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+Contact 2:<br>
+<input type="text" name="contact 2"><br>
+    <font color="red">E-mail:</font><br>
+<input type="text" name="email"><br>
+Emergency message:<br>
+<input type="text" name="emergency message" size="50"><br><br>
+<input type="submit" value="Set contact">
+</form>
+  
+  
 </div>
 
-<div class="w3-container">
-
+<div id="Settings" class="w3-container city" style="display:none">
+  <h2><font color="red">Settings</font></h2>
+  <p>Paris is the capital of France.</p> 
 </div>
-  
 
+<div id="About" class="w3-container city" style="display:none">
+  <h2><font color="red">About</font></h2>
+  <p>EmClick is an certified website to ensure that you recieve immediate help in the case of an emergency. Emclick is to be used for emergencies only. Innappropriate use of this website will result legal consequences. </p>
+</div>
 <script>
-function w3_open() {
-    document.getElementById("mySidebar").style.width = "100%";
-    document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
 }
 </script>
- 
-  
+     
+     
+     
+   </body>
    </html>
+
