@@ -10,7 +10,6 @@
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Emergency Button')">Emergency Button</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'My Account')">My Account</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'My Contacts')">My Contacts</button>
-  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Settings')">Settings</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Help')">Help</button>
 
 </div>
@@ -18,15 +17,15 @@
 <div style="margin-left:130px">
   <div id="My Account" class="w3-container city" style="display:none">
     <h2>My Account</h2>
-    user; {{ user.username }}
-email; {{ user.email }}
+    User; {{ User.username }}
+Email; {{ user.email }}
   </div>
 
   <div id="My Contacts" class="w3-container city" style="display:none">
 
 <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-Contact 2:<br>
-<input type="text" name="contact 2"><br>
+Contact 1:<br>
+<input type="text" name="contact 1"><br>
     <font color="red">E-mail:</font><br>
 <input type="text" name="email"><br>
 Emergency message:<br>
@@ -44,16 +43,15 @@ Emergency message:<br>
 <input type="submit" value="Set contact">
 </form>
 
-  </div>
 
-  <div id="Settings" class="w3-container city" style="display:none">
-    <h2>settings</h2>
-
-  </div>
-
-  <div id="Help" class="w3-container city" style="display:none">
+<div id="Help" class="w3-container city" style="display:none">
    <p> help </p>
-  </div>
+ </div>
+
+
+<!--<div id="log out" class="w3-container city" style="display:none">
+  <p> help </p>
+</div>-->
 
 <div id="Emergency Button" class="w3-container city" style="display:none">
    <p> help </p>
