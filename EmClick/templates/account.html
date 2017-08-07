@@ -79,13 +79,46 @@ Emergency message:<br>
   <p> you out</p>
 </div>
 
+<<<<<<< HEAD
 <div id="Emergency-Button" class="w3-container city" style="display:none">
   e button
   <button onclick="myFunction()">Click me</button>
+=======
+<div id="Emergency Button" class="w3-container city" style="display:none">
+    <p> help </p>
+<button onclick="myFunction()">Click me</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+  </div>
+>>>>>>> a84efaa54869c7cb7a31396f91a9d7279d63a1ac
 
 </div>
 </div>
 
+<<<<<<< HEAD
 </div>
+=======
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+>>>>>>> a84efaa54869c7cb7a31396f91a9d7279d63a1ac
 </body>
 </html>
