@@ -4,10 +4,35 @@
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+
+
+  <script>
+
+  function myFunction() {
+     document.getElementById("demo").innerHTML = "Help";
+  }
+
+  function openCity(evt, cityName) {
+    console.log("hello")
+    var i, x, tablinks;
+    x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " w3-red";
+  }
+  </script>
+</head>
 <body>
 
 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card-2" style="width:130px">
-  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Emergency Button')">Emergency Button</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Emergency-Button')">Emergency Button</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'My Account')">My Account</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'My Contacts')">My Contacts</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Help')">Help</button>
@@ -46,44 +71,21 @@ Emergency message:<br>
 
 
 <div id="Help" class="w3-container city" style="display:none">
-   <p> help </p>
+   <p> fgrtgrtg </p>
  </div>
 
 
 <div id="log out" class="w3-container city" style="display:none">
-  <p> help </p>
+  <p> you out</p>
 </div>
 
-<div id="Emergency Button" class="w3-container city" style="display:none">
+<div id="Emergency-Button" class="w3-container city" style="display:none">
+  e button
   <button onclick="myFunction()">Click me</button>
 
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-   document.getElementById("demo").innerHTML = "Hello World";
-}
-</script>
-
+</div>
 </div>
 
 </div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
-</script>
-
 </body>
 </html>
