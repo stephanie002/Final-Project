@@ -39,13 +39,32 @@
 email; {{ user.email }}
   </div>
 
+<<<<<<< HEAD
 <div id="My Contacts" class="w3-container city" style="display:none">
+=======
+  <div id="My Contacts" class="w3-container city" style="display:none">
+<<<<<<< HEAD
+
+{% for contact in contacts %}
+  {{ contact.first_name }}
+
+  {{ conatct.last_name }}
+
+   {{ contact.phone_number }}
+
+   {{ contact.email }}
+
+{% endfor %}
+
+=======
+>>>>>>> 2697ca6910a1e14bc38a2a87eb28b7381c77d577
   {%for contact in contacts%}
     {{ contact.first_name}}
     {{ contact.last_name}}
     {{ contact.phonenumber}}
     {{ contact.email}}
   {% endfor %}
+>>>>>>> d87ff372cf2c6d8be734d20fb9ab29f4d52faa85
   </div>
 
   <div id="Settings" class="w3-container city" style="display:none">
@@ -67,6 +86,25 @@ email; {{ user.email }}
     <input type="text" name="emergency message" size="50"><br><br>
     <input type="submit" value="Set contact">
     </form>
+
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+    Contact 1:<br>
+    <input type="text" name="contact 1"><br>
+        <font color="red">E-mail:</font><br>
+    <input type="text" name="email"><br>
+    Emergency message:<br>
+    <input type="text" name="emergency message" size="50"><br><br>
+    <input type="submit" value="Set contact">
+    </form>
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+    Contact 2:<br>
+    <input type="text" name="contact 2"><br>
+        <font color="red">E-mail:</font><br>
+    <input type="text" name="email"><br>Emergency message:<br>
+    <input type="text" name="emergency message" size="50"><br><br>
+    <input type="submit" value="Set contact">
+    </form>
+
 
   </div>
 
