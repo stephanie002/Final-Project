@@ -41,6 +41,12 @@ email; {{ user.email }}
 
   <div id="My Contacts" class="w3-container city" style="display:none">
 
+{%for contact in contacts%}
+  {{ contact.first_name}}
+  {{ contact.last_name}}
+  {{ contact.phonenumber}}
+  {{ contact.email}}
+
 <form action="mailto:someone@example.com" method="post" enctype="text/plain">
 Contact 1:<br>
 <input type="text" name="contact 1"><br>
@@ -58,7 +64,6 @@ Contact 2:<br>
 <input type="text" name="emergency message" size="50"><br><br>
 <input type="submit" value="Set contact">
 </form>
-
   </div>
 
   <div id="Settings" class="w3-container city" style="display:none">
@@ -91,22 +96,7 @@ function handleVideo(stream) {
 
 function videoError(e) {
     // do something
-    navigator.getUserMedia  = navigator.getUserMedia ||
-                          navigator.webkitGetUserMedia ||
-                          navigator.mozGetUserMedia ||
-                          navigator.msGetUserMedia;
-
-var video = document.querySelector('video');
-
-if (navigator.getUserMedia) {
-  navigator.getUserMedia({audio: true, video: true}, function(stream) {
-    video.src = window.URL.createObjectURL(stream);
-  }, errorCallback);
-} else {
-  video.src = 'somevideo.webm'; // fallback.
 }
-}
-
 </script>
 
   </div>
