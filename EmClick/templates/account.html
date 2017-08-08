@@ -2,11 +2,27 @@
 <!DOCTYPE html>
 <html>
 <title>W3.CSS</title>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="Display Webcam Stream" name="title">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  #container {
+    margin: 0px auto;
+    width: 500px;
+    height: 375px;
+    border: 10px #333 solid;
+  }
+
+    #videoElement {
+      width: 500px;
+      height: 375px;
+      background-color: #666;
+    }
+</style>
+<script>
 
 
-  <script>
 
   function myFunction() {
      document.getElementById("demo").innerHTML = "Help";
