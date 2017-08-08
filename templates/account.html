@@ -68,35 +68,9 @@ Contact 2:<br>
 
   <div id="Help" class="w3-container city" style="display:none">
    <p>      The most important thing to know is that we are here to help you!You need to stay calm and trust that we know how to immediately get you the help that you need </p>
-   
+
  <input type="file" accept="video/*;capture=camcorder">
  <input type="file" accept="audio/*;capture=microphone">
- <device type="media" onchange="update(this.data)"></device>
- <video autoplay></video>
- <script>
-   function update(stream) {
-     document.querySelector('video').src = stream.url;
-   }
- </script>
- <video autoplay></video>
-
-<script>
-  var errorCallback = function(e) {
-    console.log('Reeeejected!', e);
-  };
-
-  // Not showing vendor prefixes.
-  navigator.getUserMedia({video: true, audio: true}, function(localMediaStream) {
-    var video = document.querySelector('video');
-    video.src = window.URL.createObjectURL(localMediaStream);
-
-    // Note: onloadedmetadata doesn't fire in Chrome when using it with getUserMedia.
-    // See crbug.com/110938.
-    video.onloadedmetadata = function(e) {
-      // Ready to go. Do some stuff.
-    };
-  }, errorCallback);
-</script>
  <div id="container">
     <video autoplay="true" id="videoElement">
 
@@ -133,7 +107,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablink");
+tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
   }
