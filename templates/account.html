@@ -71,6 +71,32 @@ Contact 2:<br>
  <input type="file" accept="image/*" capture="camera">
  <input type="file" accept="video/*;capture=camcorder">
  <input type="file" accept="audio/*;capture=microphone">
+ <device type="media" onchange="update(this.data)"></device>
+ <video autoplay></video>
+ <script>
+   function update(stream) {
+     document.querySelector('video').src = stream.url;
+   }
+ </script>
+ <video autoplay></video>
+
+<script>
+  var errorCallback = function(e) {
+    console.log('Reeeejected!', e);
+  };
+
+  // Not showing vendor prefixes.
+  navigator.getUserMedia({video: true, audio: true}, function(localMediaStream) {
+    var video = document.querySelector('video');
+    video.src = window.URL.createObjectURL(localMediaStream);
+
+    // Note: onloadedmetadata doesn't fire in Chrome when using it with getUserMedia.
+    // See crbug.com/110938.
+    video.onloadedmetadata = function(e) {
+      // Ready to go. Do some stuff.
+    };
+  }, errorCallback);
+</script>
  <div id="container">
     <video autoplay="true" id="videoElement">
 
