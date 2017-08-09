@@ -25,8 +25,12 @@ SECRET_KEY = '9&wzz@jeg^w%62hfn^tis7e=+2ge(3!2+9-t3-9*^=zk!kuh_v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'Jezzzae.pythonanywhere.com']
-
+ALLOWED_HOSTS = ['127.0.0.1', 'Jezzzae.pythonanywhere.com','camraneke.pythonanywhere.com']
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'camraneke'
+EMAIL_HOST_PASSWORD = 'sjzc2017'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Application definition
 
